@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*GENERAL*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(40, 40, 40);
+    background-color: rgba(215, 215, 215, 0.893);
+}
+
+.titulos {
+    display: inline-block;
+    font-size: 50px;
+    font-family: 'Montserrat';
+    padding-left: 50px;
+    padding-top: 50px;
+    color: rgba(12, 12, 12, 0.725);
+}
+
+.parrafos {
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    padding-left: 45px;
+    color: rgba(12, 12, 12, 0.725);
+}
+
+
+/*HEADER*/
+
+header .menuHeader {
+    display: inline-block;
+    height: 750px;
+    width: 100%;
+    background-image: url(./assets/header1848.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+nav .menuHeader li a {
+    display: inline;
+    font-size: 35px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.85);
+    list-style-type: none;
+    text-decoration: none;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+nav .menuHeader .meHeader {
+    display: inline;
+    position: absolute;
+    left: 400px;
+    top: 50px;
+}
+
+nav .menuHeader .realesesHeader {
+    display: inline;
+    position: absolute;
+    left: 150px;
+    top: 280px;
+}
+
+nav .menuHeader .musicHeader {
+    display: inline;
+    position: absolute;
+    left: 1100px;
+    top: 520px;
+}
+
+nav .menuHeader .tourHeader {
+    display: inline;
+    position: absolute;
+    left: 1050px;
+    top: 50px;
+}
+
+nav .menuHeader .showsHeader {
+    display: inline;
+    position: absolute;
+    left: 1200px;
+    top: 280px;
+}
+
+nav .menuHeader .contactHeader {
+    display: inline;
+    position: absolute;
+    left: 250px;
+    top: 520px;
+}
+
+
+nav .menuHeader li a:hover {
+    background-color: #1515156a;
+    border-radius: 10px;
+    padding: 5px;
+    text-overflow: initial;
+}
+
+/* GRID ITEMS */
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax (250px, 1fr));
+    grid-auto-rows: 300px;
+    gap: 20px;
+    padding: 30px;
+}
+
+@media (min-width: 768px) {
+
+    .item1 {
+        grid-column: 1 / 3;
+    }
+
+    .item4 {
+        grid-row: 2 / 4;
+    }
+
+    .item6 {
+        grid-column: 3 / 5;
+    }
+
+    .item7 {
+        grid-column: 2 / 4;
+        grid-row: 3 / 5;
+    }
+}
